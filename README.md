@@ -1,40 +1,41 @@
-# QR Kód Generátor
+# QR Code Generator
 
-Webová aplikace pro generování personalizovaných QR kódů. Postaveno na React, TypeScript, Vite a Tailwind CSS s designovým systémem Fluent 2.
-Try it here: [https://qr-kod-generator-stc.simonstohs99.workers.dev](https://qr-kod-generator-stc.simonstohs99.workers.dev/)
+A web application for generating customizable QR codes. Built with React, TypeScript, Vite, and Tailwind CSS using the Fluent 2 design system.
 
-## Funkce
+**Live Demo:** [Try it here](https://qr-kod-generator-stc.simonstohs99.workers.dev)
 
-- ✅ Generování QR kódů z textu/URL
-- 🎨 Volitelná barva pozadí a popředí s kontrolou kontrastu (ISO/IEC 18004)
-- 📐 Nastavitelné rozlišení (128–4096 px)
-- 📄 Export do PNG (rastr) a SVG (vektor)
-- 🔧 Volba úrovně korekce chyb (L, M, Q, H)
-- 🖼️ Možnost vložit logo do středu QR kódu s automatickou validací velikosti
+## Features
 
-## Technologický stack
+- ✅ Generate QR codes from text or URLs
+- 🎨 Customizable foreground and background colors with contrast ratio validation (ISO/IEC 18004)
+- 📐 Adjustable resolution (128–4096 px)
+- 📄 Export to PNG (raster) and SVG (vector)
+- 🔧 Selectable error correction levels (L, M, Q, H)
+- 🖼️ Optional center logo overlay with automatic size validation
+
+## Tech Stack
 
 - **React 19** + **TypeScript**
 - **Vite** (build tool)
 - **Tailwind CSS v4** (styling, Fluent 2 design)
-- **qrcode** (generování QR kódů)
+- **qrcode** (QR code generation)
 
-## Spuštění (vývoj)
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Docker nasazení
+## Docker Deployment
 
 ```bash
 docker build -t qr-kod-generator .
 docker run -p 8080:80 qr-kod-generator
 ```
 
-Aplikace bude dostupná na `http://localhost:8080`.
+The application will be available at `http://localhost:8080`.
 
-## Licence
+## License
 
 MIT
